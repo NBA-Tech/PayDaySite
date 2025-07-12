@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>Pay Day</title>
-
+    <title>PAYDAY</title>
+ <link rel="icon" href="img/Trazado 21.png" type="image/x-icon">
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
 
@@ -18,6 +18,9 @@
 
     <!-- Responsive Stylesheet -->
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- Font Awesome CDN (v4.7 for fa- prefixed icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 
@@ -37,7 +40,7 @@
                 <nav class="classy-navbar justify-content-between" id="dreamNav">
 
                     <!-- Logo -->
-                    <a class="nav-brand" href="index-2.html"><img draggable="false" src="img/core-img/logo.png" alt="logo"> Pay Day</a>
+                    <a class="nav-brand" href="index-2.html"><img draggable="false" src="img/Trazado 21.png" style="height: 50px;" alt="logo"> PAYDAY</a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -57,9 +60,9 @@
                             <ul id="nav">
                                 <li><a href="#home">Home</a></li>
                                 <li><a href="#about">About</a></li>
-                                <li><a href="#services">Services</a></li>
-                                <li><a href="#roadmap">Roadmap</a></li>
-                                <li><a href="#team">Team</a></li>
+                                <li><a href="#demo">Demo</a></li>
+                                <li><a href="#services">Features</a></li>
+                                <li><a href="#faq">FAQ</a></li>
                                 <li><a href="#contact">Contact</a></li>
                             </ul>
 
@@ -129,7 +132,7 @@
         </ul>
     </div>
 
-    <section class="features section-padding-100-0">
+    <section class="features section-padding-100-0"  id="about">
 
         <div class="section-heading text-center">
 
@@ -145,37 +148,50 @@
                 <div class="service-img-wrapper how col-lg-6 col-md-12 col-sm-12 d-flex align-items-start">
                     <div class="image-box"  style="width: 100%; height: auto;">
                         <img draggable="false" src="img\demo.jpeg" class="img-fluid" alt="App Demo" style="width: 100%; height: auto; 
-                        border-radius: 12px; display: block;max-height: 570px; max-width: 300px;">
+                        border-radius: 12px; display: block;max-height: 570px; max-width: 250px;">
                     </div>
                 </div>
                 <div class="services-column col-lg-6 offset-lg-0 col-md-10 offset-md-1 col-xs-10 offset-xs-1">
                     <!--Services Block Four-->
-                    <div class="services-block-four how">
-                        <div class="inner-box">
-                            <div class="step">1</div>
-                            <h3><a href="#">Download the App</a></h3>
-                            <div class="text">Get started by downloading our powerful mobile or web app. Manage your investments, explore movies, and track real-time progress — all from a single platform.</div>
+              <!-- Services Block Four -->
+<div class="services-block-four how">
+  <div class="inner-box">
+    <div class="step">1</div>
+    <!-- CHANGED: title + body -->
+    <h3><a href="#">Install & Sign Up</a></h3>
+    <div class="text">
+      Turn your time into money! Download <strong>PayDay</strong>, create an
+      account with your email or phone number, verify the OTP, and you’re in.
+    </div>
+  </div>
+</div>
 
-                        </div>
-                    </div>
+<!-- Services Block Four -->
+<div class="services-block-four how">
+  <div class="inner-box">
+    <div class="step">2</div>
+    <!-- SLIGHT TWEAK: headline kept, body updated -->
+    <h3><a href="#">Invest in Movies</a></h3>
+    <div class="text">
+      Browse a curated list of upcoming films, view box‑office projections,
+      ticket price, and the number of current investors. Choose your favourites
+      and buy shares or tickets.
+    </div>
+  </div>
+</div>
 
-                    <!--Services Block Four-->
-                    <div class="services-block-four how">
-                        <div class="inner-box">
-                            <div class="step">2</div>
-                            <h3><a href="#"> Invest in Movies</a></h3>
-                            <div class="text">Browse a curated list of high-potential screenplays. Analyze the story, concept, and potential. Choose the movies you believe in and invest with confidence.</div>
-                        </div>
-                    </div>
-
-                    <!--Services Block Four-->
-                    <div class="services-block-four how" style="margin-bottom:0">
-                        <div class="inner-box">
-                            <div class="step">3</div>
-                            <h3><a href="#">Earn Returns as movies Grow</a></h3>
-                            <div class="text">As the screenplay moves through development and gains traction, your investment earns rewards — based on movie success, deals, and market performance.</div>
-                        </div>
-                    </div>
+<!-- Services Block Four -->
+<div class="services-block-four how" style="margin-bottom:0">
+  <div class="inner-box">
+    <div class="step">3</div>
+    <!-- CHANGED: title + body -->
+    <h3><a href="#">Watch Profits Grow</a></h3>
+    <div class="text">
+      Track your assets and profit (0.5 % every 24 h) in real time. Withdraw
+      gains or top‑up via card, Stripe, or bank transfer—directly from the app.
+    </div>
+  </div>
+</div>
 
                 </div>
 
@@ -195,7 +211,7 @@
     <!-- ##### trust Area End ##### -->
 
     <!-- ##### About Us Area Start ##### -->
-    <section class="about-us-area section-padding-0-100 clearfix" id="about">
+    <section class="about-us-area section-padding-0-100 clearfix" >
         <div class="container">
             <div class="row align-items-center">
 
@@ -218,9 +234,15 @@
                         <!-- <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s">
                     <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                 </div> -->
-                        <h4 class="wow fadeInUp" data-wow-delay="0.3s">We treat every story like an opportunity — ensuring your investment is valued, tracked, and built for growth.</h4>
-                        <p class="wow fadeInUp" data-wow-delay="0.4s">Every project we onboard is selected with care and developed with integrity — aligning with both the creative potential of the screenplay and the financial interests of our investors. From script selection to funding and progress tracking, our approach is precise, transparent, and investor-focused — because your trust deserves results that grow with the story.</p>
-                        <!-- <p class="wow fadeInUp" data-wow-delay="0.5s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molestiae facere, natus reprehenderit eaque eum, autem ipsam. Magni, error. Tempora odit laborum iure inventore possimus laboriosam qui nam. Fugit!</p> -->
+                 <h4 class="wow fadeInUp" data-wow-delay="0.3s">
+  Your story, your investment — built to grow.
+</h4>
+<p class="wow fadeInUp" data-wow-delay="0.4s">
+  Every film on our platform is carefully chosen for its creative and market potential. 
+  We combine smart screening with transparent tracking, so you always know how your investment is performing. 
+  Whether you're funding a future hit or exploring new stories, we make sure your money grows with the movie.
+</p>
+
                     </div>
                 </div>
 
@@ -263,12 +285,13 @@
                     <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s">
                         <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                     </div>
-                    <h4 class="wow fadeInUp" data-wow-delay="0.3s">
-                        We believe in investing early, transparently, and meaningfully.
-                    </h4>
-                    <p class="wow fadeInUp" data-wow-delay="0.4s">
-                        Every film begins as an idea — and through our platform, you're part of its evolution. We enable you to fund compelling screenplays, track their journey, and watch your portfolio grow with every milestone. Whether it's your first investment or your fiftieth, our process ensures clarity, control, and connection at every step.
-                    </p>
+                  <h4 class="wow fadeInUp" data-wow-delay="0.3s">
+  Invest early. Track easily. Grow consistently.
+</h4>
+<p class="wow fadeInUp" data-wow-delay="0.4s">
+  Every great movie starts with an idea — and your investment helps bring it to life. With PayDay, you can support upcoming films, monitor progress in real time, and see your profits grow as the project advances. Whether you're just starting or already building a portfolio, we make the process simple, transparent, and rewarding.
+</p>
+
                 </div>
             </div>
 
@@ -286,7 +309,7 @@
     <!-- ##### About Us Area End ##### -->
 
 
-    <section class="demo-video section-before section-padding-100">
+    <section class="demo-video section-before section-padding-100" id="demo">
         <div class="container">
             <div class="section-heading text-center">
 
@@ -323,7 +346,7 @@
                 <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s">
                     <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                 </div>
-                <h2 class="wow fadeInUp" data-wow-delay="0.3s">Our Core Services</h2>
+                <h2 class="wow fadeInUp" data-wow-delay="0.3s">Our Core Features</h2>
                 <p class="wow fadeInUp" data-wow-delay="0.4s">Empowering modern investors to engage in screenplay-backed film investments with robust tools, secure systems, and real-time insights.</p>
             </div>
 
@@ -336,9 +359,11 @@
                         <div class="service_icon">
                             <img draggable="false" src="img/services/auth.png" alt="" style="width: 60px; height: 60px;">
                         </div>
-                        <h6>Authentication & Authorization</h6>
-                        <p> Secure login system with role-based access control ensures data privacy, user verification, and protected access to platform features.</p>
-                    </div>
+                    <h6>Authentication & Authorization</h6>
+<p>
+Stay secure with a verified login that protects your account and data. All access is encrypted to ensure privacy across the platform.
+ </p>
+ </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
                     <!-- Content -->
@@ -348,8 +373,9 @@
                             <img draggable="false" src="img/services/profile.png" alt="" style="width: 60px; height: 60px;">
                         </div>
                         <h6> User Profile & Management</h6>
-                        <p>Manage your personal details, KYC documents, and preferences for a seamless and customized user experience across the platform.</p>
-                    </div>
+                   <p>
+Update personal details, manage your profile, and set preferences — all from one place for a personalized platform experience.</p>
+  </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
                     <!-- Content -->
@@ -359,8 +385,8 @@
                             <img draggable="false" src="img/services/profit.png" alt="" style="width: 60px; height: 60px;">
                         </div>
                         <h6>Movie Investment System</h6>
-                        <p>Explore, evaluate, and invest in curated screenplays with a seamless process built for both new and experienced investors.</p>
-                    </div>
+                   <p>
+Discover screenplays, analyze details, and invest confidently. Whether you're new or experienced, the process is built for ease.</p>  </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
                     <!-- Content -->
@@ -370,8 +396,10 @@
                             <img draggable="false" src="img/services/transaction.png" alt="" style="width: 60px; height: 60px;">
                         </div>
                         <h6>Transaction & Payment Handling</h6>
-                        <p>Perform secure payments, monitor transaction history, and receive digital receipts for every investment made on the platform.</p>
-                    </div>
+                   <p>
+  Make secure payments, track your history, and download receipts — every transaction is recorded and easy to access.
+</p>
+ </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
                     <!-- Content -->
@@ -381,8 +409,10 @@
                             <img draggable="false" src="img/services/protection.png" alt="" style="width: 60px; height: 60px;">
                         </div>
                         <h6> Asset & Wallet Management</h6>
-                        <p>Monitor your investments, earnings, and digital assets from a centralized dashboard with full control and transparency.</p>
-                    </div>
+                   <p>
+  View your active investments, profits, and balance in real time. Everything is organized in a single, easy-to-use dashboard.
+</p>
+ </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
                     <!-- Content -->
@@ -392,8 +422,9 @@
                             <img draggable="false" src="img/services/e-mail.png" alt="" style="width: 60px; height: 60px;">
                         </div>
                         <h6>Notifications / Alerts</h6>
-                        <p>Receive instant alerts on movie updates, investment movements, and key platform notifications to stay informed in real time and take action.</p>
-                    </div>
+                  <p>
+ Get real-time updates on your investments, movie progress, new opportunities, and key account activities — so you’re always in the loop and ready to act quickly .</p>
+  </div>
                 </div>
             </div>            
         </div>
@@ -449,7 +480,7 @@
     <!-- ##### Subscribe Area End ##### -->
 
     <!-- ##### FAQ & Timeline Area Start ##### -->
-    <div class="faq-timeline-area section-padding-100">
+    <div class="faq-timeline-area section-padding-100" id="faq">
         <div class="container">
             <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s">
                     <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
@@ -479,10 +510,13 @@
                                 <p>Each screenplay is launched with a set investment window. You'll be notified when a new movie is available through the app or email alerts.</p>
                             </dd>
                             <!-- Single FAQ Area -->
-                            <dt class="wave wow fadeInUp" data-wow-delay="0.5s">How can I start investing in movie? </dt>
-                            <dd>
-                                <p>To participate, create a free account, verify your identity (KYC), and fund your wallet. Once set up, you can explore screenplays and invest directly through your dashboard.</p>
-                            </dd>
+                            <dt class="wave wow fadeInUp" data-wow-delay="0.5s">How can I start investing in a movie?</dt>
+<dd>
+    <p>
+        To get started, create a free account and log in. Once you're in, you can add funds to your wallet, explore upcoming movies, and invest directly through your dashboard.
+    </p>
+</dd>
+
                         </dl>
                     </div>
                 </div>
@@ -596,10 +630,12 @@
                             <!-- Copywrite -->
                             <div class="copywrite_text wow fadeInUp" data-wow-delay="0.2s">
                                 <div class="footer-logo">
-                                    <a href="#"><img draggable="false" src="img/core-img/logo.png" alt="logo"> DigiTrader.</a>
+                                    <a href="#"><img draggable="false" src="img/Trazado 21.png" alt="logo"> PAYDAY</a>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ducimus voluptatibus neque illo id repellat quisquam? Autem expedita earum quae laborum ipsum ad, a eaque officiis eligendi blanditiis odio necessitatibus.</p>
-                            </div>
+                          <p>
+  PayDay is a movie investment platform where anyone can fund upcoming films, track returns, and grow their portfolio — all from a single app. Simple, secure, and built for the future of entertainment finance.
+</p>
+  </div>
                             <!-- Social Icon -->
                             <div class="footer-social-info wow fadeInUp" data-wow-delay="0.4s">
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -612,44 +648,17 @@
                     </div>
                     <div class="col-12 col-md-7">
                         <!-- Content Info -->
-                        <div class="contact_info_area d-sm-flex justify-content-between">
+                        <div class="contact_info_area d-sm-flex justify-content-around">
                             <div class="contact_info text-center wow fadeInUp" data-wow-delay="0.2s">
                                 <h5>NAVIGATE</h5>
-                                <a href="">
-                                    <p>Advertisers</p>
-                                </a>
-                                <a href="">
-                                    <p>Developers</p>
-                                </a>
-                                <a href="">
-                                    <p>Resources</p>
-                                </a>
-                                <a href="">
-                                    <p>Company</p>
-                                </a>
-                                <a href="">
-                                    <p>Connect</p>
-                                </a>
+                               <a href="#about"><p>About</p></a>
+  <a href="#demo"><p>Demo</p></a>
+  <a href="#services"><p>Features</p></a>
+  <a href="#faq"><p>FAQ</p></a>
+  <a href="#contact"><p>Contact</p></a>
                             </div>
                             <!-- Content Info -->
-                            <div class="contact_info text-center wow fadeInUp" data-wow-delay="0.3s">
-                                <h5>PRIVACY & TOS</h5>
-                                <a href="">
-                                    <p>Advertiser Agreement</p>
-                                </a>
-                                <a href="">
-                                    <p>Acceptable Use Policy</p>
-                                </a>
-                                <a href="">
-                                    <p>Privacy Policy</p>
-                                </a>
-                                <a href="">
-                                    <p>Technology Privacy</p>
-                                </a>
-                                <a href="">
-                                    <p>Developer Agreement</p>
-                                </a>
-                            </div>
+                  
                             <!-- Content Info -->
                             <div class="contact_info text-center wow fadeInUp" data-wow-delay="0.4s">
                                 <h5>Phone</h5>
