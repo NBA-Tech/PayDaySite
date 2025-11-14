@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Failed</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ef4444, #b91c1c);
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 50px 60px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .animation-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: scale(1.6);
+      margin-bottom: 5px; /* smaller gap */
+    }
+
+    lottie-player {
+      width: 300px;
+      height: 300px;
+      animation: zoomIn 1s ease-in-out;
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.6);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1.05rem;
+      opacity: 0.9;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      background-color: #fff;
+      color: #b91c1c;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background-color: #b91c1c;
+      color: #fff;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+      transform: translateY(-2px);
+    }
+
+    .glow {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.2);
+      filter: blur(80px);
+      animation: moveGlow 6s infinite alternate ease-in-out;
+    }
+
+    .glow:nth-child(1) {
+      top: 10%;
+      left: 15%;
+    }
+
+    .glow:nth-child(2) {
+      bottom: 10%;
+      right: 15%;
+      animation-delay: 2s;
+    }
+
+    @keyframes moveGlow {
+      from { transform: translateY(0); }
+      to { transform: translateY(50px) scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <div class="glow"></div>
+  <div class="glow"></div>
+
+  <div class="container">
+    <div class="animation-wrapper">
+      <lottie-player 
+        src="https://assets9.lottiefiles.com/packages/lf20_qp1q7mct.json" 
+        background="transparent"
+        speed="1"
+        autoplay>
+      </lottie-player>
+    </div>
+    <h1>Payment Failed!</h1>
+    <p>Unfortunately, your transaction could not be completed.</p>
+  </div>
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+</html>
